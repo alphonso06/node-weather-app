@@ -84,7 +84,7 @@ app.get(routes.weather, function(req, res)
             return res.send({ error })
         }
 
-        forecast(mapbox.latitude, mapbox.longtitude, function (error, darksky)
+        forecast(mapbox.latitude, mapbox.longitude, function (error, darksky)
         {
             if (error)
             {
@@ -143,5 +143,5 @@ app.get('*', function (req, res)
 // Listening Server
 app.listen(port, function ()
 {
-    console.log('Check out the server at localhost port' + port)
+    console.log('Check out the server at localhost port ' + port)
 })

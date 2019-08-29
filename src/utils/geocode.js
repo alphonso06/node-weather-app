@@ -23,7 +23,7 @@ function geocode (address, callback)
         {
             callback(undefined, 
                 {
-                    longtitude: api.features[0].center[0],
+                    longitude: api.features[0].center[0],
                     latitude: api.features[0].center[1],
                     location: api.features[0].place_name
                 })
