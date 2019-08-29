@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ExpressJS</title>
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="/media/favicon.ico">
+    </head>
+    <body>
+        <div class="main">
+            {{>header}}
+            <p>Here's some relevant weather info.</p>
+
+            <form>
+                <input placeholder="Search Location">
+                <button>Submit</button>
+            </form>
+
+            <p id="displayOne"></p>
+            <p id="displayTwo"></p>
+        </div>
+
+        {{>footer}}
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
