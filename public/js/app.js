@@ -1,5 +1,3 @@
-console.log('App.js successfully loaded.')
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const displayOne = document.querySelector('#displayOne')
