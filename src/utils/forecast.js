@@ -23,7 +23,7 @@ function forecast (latitude, longitude, callback)
             callback(undefined, 
                 api.currently.summary + '. It is currently ' 
                 + api.currently.temperature + '°C out. ' 
-                + 'There is ' + api.currently.precipProbability + '% chance to rain. '
+                + 'There is ' + Math.trunc(api.currently.precipProbability * 100) + '% chance to rain. '
                 + 'Wind speed is at ' + api.currently.windSpeed + 'm/s.')
         }
     })
