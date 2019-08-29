@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', function (event)
     {
         displayTwo.textContent = 'Loading...'
 
-        fetch('http://localhost:3000/weather?address=' + location, { headers: { 'Access-Control-Allow-Origin': '*' } }).then(function (response) 
+        fetch('/weather?address=' + location, { headers: { 'Access-Control-Allow-Origin': '*' } }).then(function (response) 
         {
             response.json().then(function (data) 
             {
