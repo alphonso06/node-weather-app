@@ -9,10 +9,10 @@ const forecast = require('./utils/forecast')
 // Express Config
 const app = express()
 const port = process.env.PORT || 3000 //--> IMPORTANT FOR ONLINE DEPLOYMENT
-const publicDirectory = path.join(__dirname, '..\\public')
+const publicDirectory = path.join(__dirname, '../public')
 app.use(express.static(publicDirectory))
-const viewsPath = path.join(__dirname, '..\\templates\\views')//-> sets up the main hbs pages directory
-const partialsPath = path.join(__dirname, '..\\templates\\partials')//-> sets up all the hbs partials
+const viewsPath = path.join(__dirname, '../templates/views')//-> sets up the main hbs pages directory
+const partialsPath = path.join(__dirname, '../templates/partials')//-> sets up all the hbs partials
 
 // Express Handlebars
 const viewEngine = 'view engine'
